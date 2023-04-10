@@ -1,0 +1,118 @@
+.overflox-x-hidden {
+  overflow-x: hidden;
+}
+
+a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.section-height {
+  height: 400px;
+}
+
+.hand-written {
+  font-family: "Kalam", cursive;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.normal-typing {
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.light-bg {
+  background-color: blanchedalmond;
+}
+
+.brand-hover {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.brand-hover:hover {
+  top: -10px;
+}
+
+.image-hover-effect {
+  filter: grayscale(100%);
+}
+
+.image-hover-effect:hover {
+  animation: image-hover 0.5s forwards ease-out;
+}
+
+.image-hover-effect:hover::after {
+  animation: image-hover 0.5s forwards ease-out reverse;
+}
+
+.card-hover:hover {
+  animation: card-hover 0.3s forwards ease-out;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.animate-up {
+  position: relative;
+  animation: move-up-opacity 0.5s forwards ease-in;
+}
+
+@keyframes image-hover {
+  from {
+    filter: grayscale(100%);
+  }
+
+  50% {
+    filter: grayscale(50%);
+  }
+
+  to {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes card-hover {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes move-up-opacity {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: -20px;
+    opacity: 1;
+  }
+}
